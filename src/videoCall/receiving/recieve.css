@@ -1,0 +1,266 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: seagreen;
+}
+
+.second {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgba(139, 95, 0, 0.726);
+}
+.userVideo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.side {
+  content: "video blocked";
+  border-radius: 8px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  right: 30px;
+  bottom: 30px;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+}
+.myvideo {
+  height: 100px;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.side::after {
+  border-radius: 8px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  right: 30px;
+  bottom: 30px;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-container {
+  display: flex;
+  height: 60px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  bottom: 50px;
+  right: 40%;
+}
+
+.buttons-hover {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 8px;
+  background-color: rgba(184, 17, 17, 0);
+  border: 1px solid rgba(139, 139, 139, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-hover:hover {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 8px;
+  background-color: rgba(131, 130, 130, 0.301);
+  border: 1px solid rgb(139, 139, 139);
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+
+.callPick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 55px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: rgb(16, 177, 83);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 60%;
+  bottom: 100px;
+  animation: vibrate 1s infinite alternate;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0px, 0px);
+    transform: rotate(2deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: translate(0px, 10px);
+    transform: rotate(2deg);
+  }
+}
+
+.callerId {
+  background-color: rgba(0, 0, 0, 0.562);
+  color: white;
+  position: absolute;
+  right: 48%;
+  top: 60px;
+  font-weight: 600;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.decline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: ;
+  height: 55px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: rgb(221, 11, 11);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 40%;
+  bottom: 100px;
+}
+
+.callPick:hover {
+  background-color: rgba(19, 199, 94, 0.788);
+  cursor: pointer;
+}
+
+.decline:hover {
+  background-color: rgba(230, 10, 10, 0.788);
+  cursor: pointer;
+}
+
+.video {
+  width: 150px;
+  height: 200px;
+}
+
+.Closecall {
+  position: absolute;
+  right: 40.5%;
+  bottom: 72px;
+}
+.Callagain {
+  position: absolute;
+  right: 58.5%;
+  bottom: 72px;
+}
+
+.declined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: ;
+  height: 55px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 40%;
+  bottom: 100px;
+}
+
+.declined:hover {
+  background-color: rgba(207, 204, 204, 0.788);
+  cursor: pointer;
+}
+
+.declinedId {
+  background-color: rgba(0, 0, 0, 0.562);
+  color: white;
+  position: absolute;
+  right: 48%;
+  top: 60px;
+  font-weight: 600;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

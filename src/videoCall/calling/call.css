@@ -1,0 +1,20 @@
+.declinee{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    background-color: rgb(221, 11, 11);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: absolute;
+    right: 50%;
+    bottom: 100px;
+}
+
+.declinee:hover{
+    background-color: rgba(243, 18, 18, 0.788);
+    cursor: pointer;
+  }
