@@ -35,12 +35,20 @@ function Call() {
   const [camera, setCamera] = useState(true);
   const [timer, setTimer] = useState(true);
 
+
+  useEffect(() => {
+    
+  },[])
+
+
+  
   useEffect(() => {
     const timerId = setTimeout(() => {
       setTimer(false);
+      console.log(timerId)
     }, 40000);
     return () => clearTimeout(timerId);
-  }, [callAccepted || timer]);
+  }, [callAccepted]);
 
   function handelClick() {
     setDisplay(!display);

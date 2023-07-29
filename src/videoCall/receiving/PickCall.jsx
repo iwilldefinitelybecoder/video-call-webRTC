@@ -39,6 +39,7 @@ function PickCall({
     setCallAccepted,
     answerCall,
     leaveCall,
+    reciever
   } = useContext(values);
   return (
     <div className={display ? "side" : "main"}>
@@ -68,7 +69,7 @@ function PickCall({
           >
             <MdCallEnd style={{ fontSize: "40px", color: "white" }} />
           </div>
-          <span className="callerId">Call from</span>
+          <span className="callerId">Call from{reciever.name}</span>
         </>
       ) : (
         camera && (

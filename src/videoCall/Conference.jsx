@@ -25,6 +25,7 @@ function Conference({ camera, mic, setCamera, setMic, handelClick }) {
     userVideo,
     callUser,
     callAccepted,
+    leaveCall,
   } = useContext(values);
 
   return (
@@ -93,7 +94,7 @@ function Conference({ camera, mic, setCamera, setMic, handelClick }) {
               />
             )}
           </div>
-          <div className="buttons-hover" onClick={(e) => handelClick()}>
+          <div className="buttons-hover" onClick={(e) => {handelClick();leaveCall()}}>
             <MdCallEnd style={{ fontSize: "40px", color: "red" }} />
           </div>
         </div>
